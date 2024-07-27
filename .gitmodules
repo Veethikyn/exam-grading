@@ -1,0 +1,6 @@
+[submodule "learning-cxx"]
+	path = learning-cxx
+	url = git@github.com:Veethikyn/learning-cxx.git
+[submodule "rustlings"]
+	path = rustlings
+	url = git@github.com:Veethikyn/rustlings.git
