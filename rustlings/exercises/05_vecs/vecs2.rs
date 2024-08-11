@@ -4,6 +4,7 @@ fn vec_loop(input: &[i32]) -> Vec<i32> {
     for element in input {
         // TODO: Multiply each element in the `input` slice by 2 and push it to
         // the `output` vector.
+        output.push(2 * element);
     }
 
     output
@@ -21,16 +22,18 @@ fn vec_map(input: &[i32]) -> Vec<i32> {
     // by 2, but with iterator mapping instead of manually pushing into an empty
     // vector.
     // See the example in the function `vec_map_example` above.
-    input
-        .iter()
-        .map(|element| {
-            // ???
-        })
-        .collect()
+    input .iter() .map(|element| { 2 * element }).collect()
 }
 
 fn main() {
     // You can optionally experiment here.
+    let input = [3, 6, 11, 72, 108];
+    let ans = vec_loop(&input);
+    let ans2 = vec_map_example(&input);
+    let ans3 = vec_map(&input);
+    println!("{:?}", ans);
+    println!("{:?}", ans2);
+    println!("{:?}", ans3);
 }
 
 #[cfg(test)]

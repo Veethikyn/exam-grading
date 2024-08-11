@@ -14,7 +14,7 @@
 
 fn main() {
     // You can optionally experiment here.
-    fn calculate_price_of_apples(apples:i128) -> i128 {
+    fn calculate_price_of_apples(apples:u64) -> u64 {
         if apples > 40{
             apples 
         } else {
