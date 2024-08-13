@@ -13,7 +13,7 @@ fn string(arg: String) {
 // Your task is to replace `placeholder(…)` with either `string_slice(…)`
 // or `string(…)` depending on what you think each value is.
 fn main() {
-    placeholder("blue");
+  /*  placeholder("blue");
 
     placeholder("red".to_string());
 
@@ -34,4 +34,26 @@ fn main() {
     placeholder("Happy Monday!".replace("Mon", "Tues"));
 
     placeholder("mY sHiFt KeY iS sTiCkY".to_lowercase());
+
+    */
+    string_slice("blue");
+
+    string("red".to_string());
+
+    string(String::from("hi"));
+
+    string("rust is fun!".to_owned());
+
+    string("nice weather".into());
+
+    string(format!("Interpolation {}", "Station"));
+
+    string_slice(&String::from("abc")[0..1]);
+
+    string_slice("  hello there ".trim());
+
+    string("Happy Monday!".replace("Mon", "Tues"));
+
+    string("mY sHiFt KeY iS sTiCkY".to_lowercase());
+
 }
